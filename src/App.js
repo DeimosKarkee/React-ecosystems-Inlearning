@@ -1,11 +1,11 @@
+import React from "react";
 import "./App.css";
-
+import TodoList from "./todos/TodoList";
+const todos = [{ text: "My name is deimos" }, { text: "I am from Nepal." }];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>React ecosystems</p>
-      </header>
+      <TodoList todos={todos} />
     </div>
   );
 }
